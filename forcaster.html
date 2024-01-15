@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Website Portfoilo </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Personal Portfolio</strong>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									
+									</ul>
+								</header>
+
+						
+								
+
+						
+						<section>
+													<header class="major" id="education">
+										<h2>Fuel Forcaster  </h2>
+									</header>
+													<div class="graph_main pb-100">
+            <div id="curve_chart" style="width: 100%; height: 500px"></div>
+</div>
+
+													</section>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Harpreet Singh</h2>
+									</header>
+									<ul>
+										
+										<li><a href="index.html">About</a></li>
+										<li><a href="education.html">Education </a></li>
+									<li><a href="professional.html">Professional</a></li>
+										<li><a href="currency.html">Currency Converter</a></li>
+											<li><a href="forcaster.html">Fuel ForcaSter </a></li>
+									
+										<li><a href="contact.html">Contact</a></li>
+										
+									</ul>
+								</nav>
+
+				
+							<!-- Section -->
+								<section>
+								
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="Preetsingh2907@gmail.com">Preetsingh2907@gmail.com</a></li>
+										<li class="icon solid fa-phone">+44 7767920102</li>
+										<li class="icon solid fa-home">United Kingdom <br />
+										</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright"> Designed by Harpreetsingh</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+		 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Gas',`Electricity`, `Liquid fuels`,'Motor fuel & Oil'],
+          ['1996',  43.3, 62.5,   33.3,  47.0],
+		  ['1999',  41.7,  56.1,  22.6,  55.3],
+          ['2002',  44.1,  54.4,  34.3,  60.6],
+		  ['2005',  53.6,  63.0,  54.3,  69.1],
+		  ['2008',  80.3,  89.2,  97.2,  90.2],
+		  ['2011',  104.6,  102.9,  125.3,  111.4],
+		  ['2014',  138.8,  129.2,  124.0,  111.7],
+		  ['2017',  122.6,  128.2,  93.5,  102.3],
+		  ['2020',  121.0,  160.3,  99.7,  106.6],
+		   ['2022',  218.9,   260.2, 209.6,  148.5]
+		  
+        ]);
+
+        var options = {
+          title: 'Energy Prices Domestic Prices',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
